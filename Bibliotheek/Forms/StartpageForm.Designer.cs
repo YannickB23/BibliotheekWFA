@@ -71,7 +71,7 @@ namespace Bibliotheek
             this.LblMenu.Name = "LblMenu";
             this.LblMenu.Size = new System.Drawing.Size(145, 32);
             this.LblMenu.TabIndex = 2;
-            this.LblMenu.Text = "Menu";
+            this.LblMenu.Text = "Log in als:";
             this.LblMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnLid

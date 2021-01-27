@@ -32,15 +32,15 @@ namespace Bibliotheek.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BezoekerForm));
             this.LblBezoeker = new System.Windows.Forms.Label();
             this.ActionsLabel = new System.Windows.Forms.Label();
-            this.RegistreerLidPB = new System.Windows.Forms.PictureBox();
             this.SearchPB = new System.Windows.Forms.PictureBox();
             this.toonOverzichPB = new System.Windows.Forms.PictureBox();
             this.RegistreerLidBTN = new System.Windows.Forms.Button();
             this.ZoekItemBTN = new System.Windows.Forms.Button();
             this.ToonOverzichBTN = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.RegistreerLidPB)).BeginInit();
+            this.RegistreerLidPB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.SearchPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toonOverzichPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistreerLidPB)).BeginInit();
             this.SuspendLayout();
             // 
             // LblBezoeker
@@ -65,31 +65,31 @@ namespace Bibliotheek.Forms
             this.ActionsLabel.TabIndex = 4;
             this.ActionsLabel.Text = "Hieronder kan u bekijken wat u kan doen:";
             // 
-            // RegistreerLidPB
-            // 
-            this.RegistreerLidPB.Image = ((System.Drawing.Image)(resources.GetObject("RegistreerLidPB.Image")));
-            this.RegistreerLidPB.Location = new System.Drawing.Point(13, 119);
-            this.RegistreerLidPB.Name = "RegistreerLidPB";
-            this.RegistreerLidPB.Size = new System.Drawing.Size(250, 251);
-            this.RegistreerLidPB.TabIndex = 5;
-            this.RegistreerLidPB.TabStop = false;
-            // 
             // SearchPB
             // 
+            this.SearchPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SearchPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SearchPB.Image = ((System.Drawing.Image)(resources.GetObject("SearchPB.Image")));
             this.SearchPB.Location = new System.Drawing.Point(269, 119);
             this.SearchPB.Name = "SearchPB";
-            this.SearchPB.Size = new System.Drawing.Size(250, 251);
+            this.SearchPB.Size = new System.Drawing.Size(256, 256);
+            this.SearchPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SearchPB.TabIndex = 6;
             this.SearchPB.TabStop = false;
             // 
             // toonOverzichPB
             // 
+            this.toonOverzichPB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.toonOverzichPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.toonOverzichPB.Image = ((System.Drawing.Image)(resources.GetObject("toonOverzichPB.Image")));
             this.toonOverzichPB.Location = new System.Drawing.Point(529, 119);
             this.toonOverzichPB.Name = "toonOverzichPB";
-            this.toonOverzichPB.Size = new System.Drawing.Size(250, 251);
+            this.toonOverzichPB.Size = new System.Drawing.Size(256, 256);
+            this.toonOverzichPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.toonOverzichPB.TabIndex = 7;
             this.toonOverzichPB.TabStop = false;
             // 
@@ -103,6 +103,7 @@ namespace Bibliotheek.Forms
             this.RegistreerLidBTN.TabIndex = 8;
             this.RegistreerLidBTN.Text = "Registreer Lid";
             this.RegistreerLidBTN.UseVisualStyleBackColor = false;
+            this.RegistreerLidBTN.Click += new System.EventHandler(this.RegistreerLidBTN_Click);
             // 
             // ZoekItemBTN
             // 
@@ -126,6 +127,17 @@ namespace Bibliotheek.Forms
             this.ToonOverzichBTN.Text = "Toon Overzicht";
             this.ToonOverzichBTN.UseVisualStyleBackColor = false;
             // 
+            // RegistreerLidPB
+            // 
+            this.RegistreerLidPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RegistreerLidPB.Image = ((System.Drawing.Image)(resources.GetObject("RegistreerLidPB.Image")));
+            this.RegistreerLidPB.Location = new System.Drawing.Point(13, 119);
+            this.RegistreerLidPB.Name = "RegistreerLidPB";
+            this.RegistreerLidPB.Size = new System.Drawing.Size(256, 256);
+            this.RegistreerLidPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.RegistreerLidPB.TabIndex = 5;
+            this.RegistreerLidPB.TabStop = false;
+            // 
             // BezoekerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -143,9 +155,9 @@ namespace Bibliotheek.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BezoekerForm";
             this.Text = "BezoekerForm";
-            ((System.ComponentModel.ISupportInitialize)(this.RegistreerLidPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toonOverzichPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistreerLidPB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,11 +167,11 @@ namespace Bibliotheek.Forms
 
         private System.Windows.Forms.Label LblBezoeker;
         private System.Windows.Forms.Label ActionsLabel;
-        private System.Windows.Forms.PictureBox RegistreerLidPB;
         private System.Windows.Forms.PictureBox SearchPB;
         private System.Windows.Forms.PictureBox toonOverzichPB;
         private System.Windows.Forms.Button RegistreerLidBTN;
         private System.Windows.Forms.Button ZoekItemBTN;
         private System.Windows.Forms.Button ToonOverzichBTN;
+        private System.Windows.Forms.PictureBox RegistreerLidPB;
     }
 }

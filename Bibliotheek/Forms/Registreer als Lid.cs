@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Bibliotheek.Forms
 {
-    public partial class BezoekerForm : Form
+    public partial class RegistreerLidForm : Form
     {
-        public BezoekerForm()
+        public RegistreerLidForm()
         {
             InitializeComponent();
-        }
-
-        private void RegistreerLidBTN_Click(object sender, EventArgs e)
-        {
-            RegistreerLidForm registreerLid = new RegistreerLidForm();
-            registreerLid.Show();
         }
     }
 }

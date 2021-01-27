@@ -73,11 +73,11 @@
     <Compile Include="Forms\LidForm.Designer.cs">
       <DependentUpon>LidForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegistreerAlsLidForm.cs">
+    <Compile Include="Forms\Registreer als Lid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RegistreerAlsLidForm.Designer.cs">
-      <DependentUpon>RegistreerAlsLidForm.cs</DependentUpon>
+    <Compile Include="Forms\Registreer als Lid.Designer.cs">
+      <DependentUpon>Registreer als Lid.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StartpageForm.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="Forms\LidForm.resx">
       <DependentUpon>LidForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegistreerAlsLidForm.resx">
-      <DependentUpon>RegistreerAlsLidForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Registreer als Lid.resx">
+      <DependentUpon>Registreer als Lid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StartpageForm.resx">
       <DependentUpon>StartpageForm.cs</DependentUpon>
